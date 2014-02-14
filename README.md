@@ -6,7 +6,4 @@ Doc тест для проверки работы модуля [test](https://gi
 
 
 Версия Python - [Python 3.2.5] (http://www.python.org/)
-### Использованные инструменты:
-* Редактор:
-    * [Sublime Text 2](sublimetext.com/2)
-* Юнит тесты: [Поканичего]
+Редактор - [Sublime Text 2](sublimetext.com/2)
