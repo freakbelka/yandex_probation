@@ -5,6 +5,4 @@
 ## Использованные инструменты:
 * Редактор:
     * [Sublime Text 2](sublimetext.com/2)
-* Фреймворк:
-    * [Djanjo](https://www.djangoproject.com/)
 * Юнит тесты: [Поканичего]
