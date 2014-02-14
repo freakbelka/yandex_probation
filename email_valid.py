@@ -1,42 +1,7 @@
 # -*- coding: utf-8 -*-
+# Модуль проверки валидности e-mail
+
 import re
-
-valid = (
-
-    # hostname validation
-    'freakbelka@gma2il.com',
-    'freakbelka@gma1-il.com',
-    'freakbelka@gf.mg',
-    'freakbelka@gm_ail.com',
-    'freakbelka@gm12ail.com',
-
-    # username validation
-    'frea_k1342.be-lka@gma2il.com',
-    'freak"belka"@gma2il.com',
-    'freak"b:elka!"@gma2il.com',
-    'fre"a:"kb"!el:"ka@gmail.com'
-    )
-
-invalid = (
-
-    # hostname validation
-    'freakbelka@@gmail.com',
-    'freakbelka@sd',
-    'freakbelka@sdfs"dsd',
-    'freakbelka@-gmail.com',
-    'freakbelka@gm2ail-.com',
-    'freakbelka@gm3ail.-com',
-    'freakbelka@gmail.com-',
-    'freakbelka@gm3ail.com.',
-
-    # username validation
-    'freak"belka@gma2il.com',
-    'frealbel+ka@gma2il.com',
-    '@gma2il.com',
-    'freakb..elka@gma2il.com',
-    'freak!belka@gma2il.com',
-    'fre"a:"kb!"el:"ka@gmail.com'
-    )  
 
 # Функция проверки попадания символов '!,:' в парные двойные кавычки
 def checkquote(name):
@@ -96,10 +61,3 @@ def splitting(email):
 	else:
 		print ("FAILED \n")
 
-# Вызов функции для проверки валидных адресов
-for email in valid:
-    splitting(email)
-
-# Вызов функции для проверки невалидных адресов
-for email in invalid:
-    splitting(email)
