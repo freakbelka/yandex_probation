@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
-# Подключить модуль для проверки e-mail
+# Подключение модуля проверки e-mail
 from validation.email import splitting
