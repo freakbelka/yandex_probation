@@ -54,10 +54,11 @@ def emailcheck(name, domain):
 def splitting(email):
 	name = email[0:email.find('@')]
 	domain = email[email.find('@')+1:]
-	print (email)
 
 	if emailcheck(name,domain):
-		print ("SUCCESS \n")
+		#print ("SUCCESS \n")
+		return True
 	else:
-		print ("FAILED \n")
+		#print ("FAILED \n")
+		return False
 

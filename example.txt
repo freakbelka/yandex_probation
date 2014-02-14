@@ -1,0 +1,48 @@
+>>> from test import splitting
+
+>>> splitting('freakbelka@gma2il.com')
+True
+>>> splitting('freakbelka@gma1-il.com')
+True
+>>> splitting('freakbelka@gf.mg')
+True
+>>> splitting('freakbelka@gm_ail.com')
+True
+>>> splitting('freakbelka@gm12ail.com')
+True
+>>> splitting('frea_k1342.be-lka@gma2il.com')
+True
+>>> splitting('freak"belka"@gma2il.com')
+True
+>>> splitting('freak"b:elka!"@gma2il.com')
+True
+>>> splitting('fre"a:"kb"!el:"ka@gmail.com')
+True
+>>> splitting('freakbelka@@gmail.com')
+False
+>>> splitting('freakbelka@sd')
+False
+>>> splitting('freakbelka@sdfs"dsd')
+False
+>>> splitting('freakbelka@-gmail.com')
+False
+>>> splitting('freakbelka@gm2ail-.com')
+False
+>>> splitting('freakbelka@gm3ail.-com')
+False
+>>> splitting('freakbelka@gmail.com-')
+False
+>>> splitting('freakbelka@gm3ail.com.')
+False
+>>> splitting('freak"belka@gma2il.com')
+False
+>>> splitting('frealbel+ka@gma2il.com')
+False
+>>> splitting('@gma2il.com')
+False
+>>> splitting('freakb..elka@gma2il.com')
+False
+>>> splitting('freak!belka@gma2il.com')
+False
+>>> splitting('fre"a:"kb!"el:"ka@gmail.com')
+False
