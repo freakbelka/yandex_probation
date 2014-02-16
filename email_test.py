@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # unittest for email validation module 
+
 import validation.email
 import unittest
 
@@ -34,10 +35,15 @@ class KnownValues(unittest.TestCase):
           )
   
      def test_email_validation(self):
-          # splitting должен вернуть известный результат на конкретное значение
+     # emailcheck должен вернуть известный результат на конкретное значение
           for input_email, value in self.known_values:
-               result = validation.email.splitting(input_email)
+<<<<<<< HEAD
+               result = validation.email.emailcheck(input_email)
                self.assertEqual(value, result, 'invalid')
+=======
+               result = validation.email.splitting(input_email)
+               self.assertEqual(value, result)
+>>>>>>> 9231b2d10ee309a66ebbae876866fd5fc28198b0
                
 if __name__ == '__main__':
      unittest.main()

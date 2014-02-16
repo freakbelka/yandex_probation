@@ -31,8 +31,15 @@ def checkquote(name):
     else:
         return False
 
+# Функция отделяет username от hostname
+def splitting(email):
+    name = email[0:email.find('@')]
+    domain = email[email.find('@')+1:]
+    return name, domain
+
 # Основная функция проверки e-mail на соответствие критериям
-def emailcheck(name, domain):
+def emailcheck(email):
+    name, domain = splitting(email)
     match_name = re.match(r'[a-z\d"\_\-\.\:\!\,]{1,128}$', name)
     match_domain = re.match(r'^[^\-\.@][a-z\d\_\-\.]{3,256}$', domain)
 
@@ -50,15 +57,5 @@ def emailcheck(name, domain):
    
     return True
 
-# Функция отделяет username от hostname и вызывает функцию для проверки валидности введеного e-mail
-def splitting(email):
-	name = email[0:email.find('@')]
-	domain = email[email.find('@')+1:]
 
-	if emailcheck(name,domain):
-		#print ("SUCCESS \n")
-		return True
-	else:
-		#print ("FAILED \n")
-		return False
 
