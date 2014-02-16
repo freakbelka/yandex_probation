@@ -36,7 +36,7 @@ class KnownValues(unittest.TestCase):
      def test_email_validation(self):
           # splitting должен вернуть известный результат на конкретное значение
           for input_email, value in self.known_values:
-               result = validation.email.splitting(input_email)
+               result = validation.email.emailcheck(input_email)
                self.assertEqual(value, result)
                
 if __name__ == '__main__':
