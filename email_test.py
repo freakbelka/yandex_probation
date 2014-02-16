@@ -38,12 +38,17 @@ class KnownValues(unittest.TestCase):
      # emailcheck должен вернуть известный результат на конкретное значение
           for input_email, value in self.known_values:
 <<<<<<< HEAD
+<<<<<<< HEAD
                result = validation.email.emailcheck(input_email)
                self.assertEqual(value, result, 'invalid')
 =======
                result = validation.email.splitting(input_email)
                self.assertEqual(value, result)
 >>>>>>> 9231b2d10ee309a66ebbae876866fd5fc28198b0
+=======
+               result = validation.email.emailcheck(input_email)
+               self.assertEqual(value, result)
+>>>>>>> a06da2ffdc1f7222c3d220297d4ecea2f4e672fe
                
 if __name__ == '__main__':
      unittest.main()

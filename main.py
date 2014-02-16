@@ -7,4 +7,7 @@ from validation.email import emailcheck
 # -*- coding: utf-8 -*-
 # Подключение модуля проверки e-mail
 from validation.email import splitting
+<<<<<<< HEAD
 >>>>>>> 9231b2d10ee309a66ebbae876866fd5fc28198b0
+=======
+>>>>>>> a06da2ffdc1f7222c3d220297d4ecea2f4e672fe
