@@ -46,3 +46,5 @@ False
 False
 >>> emailcheck('fre"a:"kb!"el:"ka@gmail.com')
 False
+>>> emailcheck('freakbelka@gmail..com')
+False
