@@ -20,7 +20,7 @@ class KnownValues(unittest.TestCase):
           ('freakbelka@gm3ail.-com', False),
           ('freakbelka@gmail.com-', False),
           ('freakbelka@gm3ail.com.', False),
-          ('freakbelka@gm3ail..com.', False),
+          ('freakbelka@gm3ail..com', False),
 
           # username validation
           ('freak"belka@gma2il.com', False),
