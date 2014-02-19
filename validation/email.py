@@ -51,7 +51,7 @@ def emailcheck(email):
     # Проверка соответствия условию для доменной части
     if not match_domain:
         return False
-    elif '.-' in domain or '-.' in domain or domain.endswith('-') or domain.endswith('.'):
+    elif '.-' in domain or '-.' in domain or '..' in domain or domain.endswith('-') or domain.endswith('.'):
         return False
    
     return True
